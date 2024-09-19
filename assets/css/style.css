@@ -1637,6 +1637,7 @@ body.overlay__active::before,
     pointer-events: none;
 }
 
+
 .offcanvas__header {
     position: fixed;
     z-index: 9999;
@@ -1647,13 +1648,13 @@ body.overlay__active::before,
     height: 100vh;
     -webkit-transition: var(--transition);
     transition: var(--transition);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+    /* -webkit-transform: translateX(-100%); */
+    /* transform: translateX(-100%); */
     background-color: var(--body-background-color);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0; */
+    /* visibility: hidden; */
 }
 
 @media only screen and (min-width: 480px) {
@@ -1717,7 +1718,8 @@ body.overlay__active::before,
     padding: 0;
     text-indent: -9999px;
     border: none;
-    background-color: transparent;
+    color: var(--secondary-color);
+    background-color: var(--text-white-color);
 }
 
 .offcanvas__close--btn::before,
